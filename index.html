@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this survey to help us improve our services.</p>
+
+        <form id="survey-form">
+            <!-- Name -->
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email -->
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Number -->
+            <label id="number-label" for="number">Age (in years):</label>
+            <input type="number" id="number" name="age" min="18" max="120" placeholder="Enter your age" required>
+
+            <!-- Dropdown -->
+            <label for="dropdown">What is your favorite programming language?</label>
+            <select id="dropdown" name="language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+
+            <!-- Radio buttons -->
+            <fieldset>
+                <legend>What is your experience level?</legend>
+                <label>
+                    <input type="radio" name="experience" value="beginner" required> Beginner
+                </label>
+                <label>
+                    <input type="radio" name="experience" value="intermediate"> Intermediate
+                </label>
+                <label>
+                    <input type="radio" name="experience" value="advanced"> Advanced
+                </label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>Which technologies do you work with?</legend>
+                <label>
+                    <input type="checkbox" name="technologies" value="html"> HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="technologies" value="css"> CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="technologies" value="javascript"> JavaScript
+                </label>
+            </fieldset>
+
+            <!-- Textarea -->
+            <label for="comments">Additional comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your comments here..."></textarea>
+
+            <!-- Submit button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+
+</html>
